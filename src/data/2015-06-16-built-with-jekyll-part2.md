@@ -5,7 +5,7 @@ date:   2015-06-16 10:27:30
 categories: webdev
 illustration: "/assets/posts/built-with-jekyll/octocat.png"
 ---
-<img class="hidden" src="{{ page.illustration }}" />
+![octocat](https://i.imgur.com/50X09ds.png)
 
 Jekyll has fantastic documentation. And getting started with Jekyll couldn't be any easier! Direct from the below is the Quick-start guide to getting started with Jekyll. &#9759;
 
@@ -25,7 +25,7 @@ Before we get into what that mess above is there are some [requirements](http://
 
 **Xcode**
 
-Working with Jekyll requires a few terminal commands. For that we need to install [Xcode](https://itunes.apple.com/us/app/xcode/https://itunes.apple.com/us/app/xcode/id497799835?mt=12). Xcode is pretty large. You may wanna grab a coffee while it downloads. 
+Working with Jekyll requires a few terminal commands. For that we need to install [Xcode](https://itunes.apple.com/us/app/xcode/https://itunes.apple.com/us/app/xcode/id497799835?mt=12). Xcode is pretty large. You may wanna grab a coffee while it downloads.
 
 All downloaded and installed? Awesome, go ahead and launch it, accept the EULA and then shut it down. We won't need it anymore.
 
@@ -44,7 +44,7 @@ I got reports of the following error happening for a couple people:
 
 ```/usr/bin/xcode-select: /usr/bin/xcode-select: cannot execute binary file```
 
-If you get that error just skip the step and move on. 
+If you get that error just skip the step and move on.
 
 If anyone actually knows what that's about I would love to hear it in the comments.
 </div>
@@ -58,7 +58,7 @@ In your terminal app type the following command and press enter:
 
 ```ruby -v```
 
-You should see something like 
+You should see something like
 
 ```ruby 2.0.0p481 (2014-05-08 revision 45883) [universal.x86_64-darwin14]```
 
@@ -72,17 +72,17 @@ Now that we have Ruby installed the next thing we need is RubyGems. Again if you
 
 ```gem -v```
 
-Look familiar? "gem" is our command for RubyGems and -v is how we check the version number. This time I get ```2.0.14``` if you have to install it yourself you will find detailed instructions on [rubygems.org](https://rubygems.org/pages/download). 
+Look familiar? "gem" is our command for RubyGems and -v is how we check the version number. This time I get ```2.0.14``` if you have to install it yourself you will find detailed instructions on [rubygems.org](https://rubygems.org/pages/download).
 
 RubyGems is a package manager framework for Ruby. It's what we will use to install Jekyll later.
 
 **NodeJS**
 
-The last thing we need before we can hit that Quick-start is NodeJS. Node does not come preinstalled on anything as far as I know but the install is super easy. Just head over to [nodejs.org](https://nodejs.org/) and download the installer. 
+The last thing we need before we can hit that Quick-start is NodeJS. Node does not come preinstalled on anything as far as I know but the install is super easy. Just head over to [nodejs.org](https://nodejs.org/) and download the installer.
 
 Finished? Perfect. We ready.
 
-Ok, let's go line by line on the Quick-start so we fully understand what we're doing. 
+Ok, let's go line by line on the Quick-start so we fully understand what we're doing.
 
 {% highlight bash %}
 ~ $ gem install jekyll
@@ -127,7 +127,7 @@ Although I suppose you want to actually see it now. For that we have a couple mo
 cd my-awesome-site
 {% endhighlight %}
 
-Here we are changing directory (cd) to our new site. Think of this as opening finder and double clicking on your sites folder. Don't forget to change "my-awesome-site" to whatever you named your blog. 
+Here we are changing directory (cd) to our new site. Think of this as opening finder and double clicking on your sites folder. Don't forget to change "my-awesome-site" to whatever you named your blog.
 
 As I mentioned earlier when we talked about the ~, commands run in our current working directory. We cd (change directory) into our site directory so we can run jekyll commands in there.
 
@@ -163,6 +163,3 @@ We'll learn how to actually write posts and pages as well as set up version cont
 <a href="{{ site.baseurl }}/150616/built-with-jekyll-part2/">Built With Jekyll Part 2</a>
 
 </div>
-
-
-

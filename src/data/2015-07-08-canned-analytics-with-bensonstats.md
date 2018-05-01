@@ -5,8 +5,8 @@ date:   2015-07-08 11:48:30
 categories: webdev
 illustration: "/assets/posts/150708/illustration.png"
 ---
-<img class="hidden" src="{{ page.illustration }}" />
-<!-- 
+![canned analytics](https://i.imgur.com/hOe5sEx.png)
+<!--
 Having spent a fair amount of time recently tinkering with Mother Blogs it became apparent that another challenge we faced was the ability to provide any sort of meaningful analysis of the data we were collecting. That data is important. Fat lot of good that data'll do you when it's locked up in the database.
  -->
 
@@ -21,7 +21,7 @@ So I took a stab at unlocking that data for David Croteau's Sociology course her
 
 Sorting by author is now possible as shown here:
 
-![](/assets/posts/150708/blogviewsortauthor.gif)
+![sort by author](https://i.imgur.com/QUOIKwZ.gifv)
 
 Some things to note. First we count all blog posts on the mother blog, then we count our results based on author and or keyword search. Finally we do a quick calculation to get the percentage of our results from the entire activity across all of our student's blogs.
 
@@ -29,7 +29,7 @@ When searching per student this is a quick and easy way of getting a count of th
 
 We can also search by keyword.
 
-![](/assets/posts/150708/blogviewsortkeyword.gif)
+![sort by keyword](https://i.imgur.com/uACit7X.gifv)
 
 When searching by keyword our analytics are the same but can provide some very different and very valuable insights. We see here that of the 184 blog posts we have 5 that contain the word "confederate". This is very likely due to the prominence of the subject in the news recently and VCU's location in particular.
 
@@ -58,15 +58,6 @@ To implement this on your own site you can do the following:
 
 ## beyond the mother blog
 
-This was all created as way to understand the data on our Mother Blogs better but it doesn't need stop there. This could provide meaningful data of a personal blog or even serve as a way to find duplicate content and site creep on a large install. 
+This was all created as way to understand the data on our Mother Blogs better but it doesn't need stop there. This could provide meaningful data of a personal blog or even serve as a way to find duplicate content and site creep on a large install.
 
 Lots more cans coming soon, so much data to sort!
-
-
-
-
-
-
-
-
-

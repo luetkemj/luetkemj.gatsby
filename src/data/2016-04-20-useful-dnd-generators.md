@@ -9,7 +9,7 @@ categories: dnd
 * [Various Shops](http://www.realmshelps.net/stores/store.shtml)
 * [Sal's Outfitters](http://www.rdinn.com/sals_outfitters.php)
 * [Magic Shop](http://donjon.bin.sh/adnd/magic/shop.html)
-* [Stors Gear and Treasure](http://www.realmshelps.net/stores/index.shtml)
+* [Stores Gear and Treasure](http://www.realmshelps.net/stores/index.shtml)
 
 ## Treasure
 * [Gems](http://www.rdinn.com/calc_gems.php)

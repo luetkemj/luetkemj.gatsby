@@ -5,7 +5,7 @@ date:   2015-06-02 12:07:30
 categories: webdev
 illustration: "/assets/posts/built-with-jekyll/octocat.png"
 ---
-<img class="hidden" src="{{ page.illustration }}" />
+![octocat](https://i.imgur.com/50X09ds.png)
 
 This blog is built with [jekyll](http://jekyllrb.com/).
 
@@ -33,7 +33,7 @@ We'll create a new site with Jekyll and examine all the individual steps and rab
 
 ### In this series
 
-<a href="{{ site.baseurl }}/150602/built-with-jekyll/">Built With Jekyll</a><br/>
-<a href="{{ site.baseurl }}/150616/built-with-jekyll-part2/">Built With Jekyll Part 2</a>
+<a href="/150602/built-with-jekyll/">Built With Jekyll</a><br/>
+<a href="/150616/built-with-jekyll-part2/">Built With Jekyll Part 2</a>
 
 </div>

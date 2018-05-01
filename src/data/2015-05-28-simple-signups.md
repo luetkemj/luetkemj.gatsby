@@ -6,7 +6,7 @@ categories: webdev
 illustration: "/assets/posts/simple-signups/taking-names.png"
 ---
 
-<img class="hidden" src="{{ page.illustration }}" />
+![Imgur](https://i.imgur.com/P7URmiG.png)
 
 [Simple Signups](https://github.com/vcualtlab/simple-signups) is an agnostic single purpose WordPress theme designed and built to handle signups.
 
@@ -29,7 +29,7 @@ The default view lists all sessions
 5. Availablity details
 
 *fig. 1*
-![](/assets/posts/simple-signups/fig1.png)
+![fig. 1](https://i.imgur.com/DEzGKbo.png)
 
 
 
@@ -43,7 +43,7 @@ Here we are searching for "Brandt" which results in all sessions in the Brandt b
 2. Live results
 
 *fig. 2*
-![](/assets/posts/simple-signups/fig2.png)
+![fig. 2](https://i.imgur.com/hbvkXYn.png)
 
 
 
@@ -55,7 +55,7 @@ After selecting a session the user will find a form allowing them to signup.
 
 1. Name and Email required
 
-![](/assets/posts/simple-signups/fig3.png)
+![fig. 3](https://i.imgur.com/W4JkzS9.png)
 
 
 
@@ -68,7 +68,7 @@ After successful completion of the form the user's name will appear in the list.
 1. User's name appears under session
 2. Availability details are updated
 
-![](/assets/posts/simple-signups/fig4.png)
+![fig. 4](https://i.imgur.com/AgldGtC.png)
 
 
 ## Feedback
@@ -77,7 +77,7 @@ When a session fills up it becomes struckthrough
 
 1. Unavailable session
 
-![](/assets/posts/simple-signups/fig5.png)
+![fig. 5](https://i.imgur.com/d6qhKsf.png)
 
 
 ## Error!
@@ -86,7 +86,7 @@ What happens if a user signs up twice?
 
 1. Custom error message for duplicate signups
 
-![](/assets/posts/simple-signups/fig6.png)
+[fig. 6](https://i.imgur.com/BmjyD7t.png)
 
 ## Wait List
 
@@ -95,7 +95,7 @@ If a user signs up after a session has become unavailable they will be wait list
 1. Wait List added when appropriate
 2. User on wait list
 
-![](/assets/posts/simple-signups/fig7.png)
+![fig. 7](https://i.imgur.com/T0ucwUm.png)
 
 
 ### Issues / Features to Add
@@ -120,6 +120,3 @@ I described this as agnostic up above because while I consider this a single pur
 A screw driver is a lever in a pinch after all.
 
 </div>
-
-
-

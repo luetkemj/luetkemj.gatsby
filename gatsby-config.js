@@ -5,13 +5,51 @@ module.exports = {
     siteUrl: 'https://luetkemj.github.io/',
   },
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
-    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-19986266-1",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        // exclude: ["/preview/**", "/do-not-track/me/too/"],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options:{
+        path: `${__dirname}/src/data`,
+        name: "markdown-pages",
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/data`,
-        name: "markdown-pages",
+        path: `${__dirname}/src/assets/images`,
+        name: "images",
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          },
+        ],
       },
     },
     {
@@ -32,7 +70,6 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              console.log(allMarkdownRemark.edges.map(edge => edge.node.frontmatter));
               return allMarkdownRemark.edges
                 .filter(edge => edge.node.frontmatter.layout !== 'comic')
                 .map(edge => {

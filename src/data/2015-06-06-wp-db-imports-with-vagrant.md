@@ -5,7 +5,7 @@ date:   2015-06-06 12:07:30
 categories: webdev
 illustration: "/assets/posts/wp-db-imports-with-vagrant/files.png"
 ---
-<img class="hidden" src="{{ page.illustration }}" />
+![files](https://i.imgur.com/IOIWZiX.png)
 
 Having depended on MAMP and PHPmyadmin for as long as I've been doing this stuff, moving to Vagrant presented me with a very real fear that I wouldn't be able to easily setup local installs of live sites. With MAMP I had always done a find and replace through the old Replacr app and then uploaded the DB through PHPmyadmin.
 
@@ -15,7 +15,7 @@ This is mostly a command line process but I promise it's pretty basic, much fast
 
 
 <div class="meta" markdown="1">
-    
+
 #### WARNING
 
 If you are cloning a live site make sure you update your local wp-config.php file accordingly. Just copy the settings that Vagrant setup for you with the wp install.
@@ -32,9 +32,9 @@ This assumes you installed vagrant at the default location of vagrant-local
 
     Make sure that the db you will be importing is the same name as the db you will be importing into. So if your local site has a database name of ```EXAMPLE.sql``` you need to make sure that the db you will be import also has a name of ```EXAMPLE.sql```
 
- 2. **Move db** 
-    
-    Make a copy of the db you will be importing and move it to the root directory of the site you will be importing into. 
+ 2. **Move db**
+
+    Make a copy of the db you will be importing and move it to the root directory of the site you will be importing into.
 
     ```/vagrant-local/www/EXAMPLE/```
 
@@ -49,7 +49,7 @@ This assumes you installed vagrant at the default location of vagrant-local
 	```cd /vagrant/www/EXAMPLE```
 
  5. **Import db**
-    
+
     ```wp db import DATABASE.sql```
 
  6. **Search and Replace** (optional)
@@ -62,7 +62,7 @@ This assumes you installed vagrant at the default location of vagrant-local
 
 
 <div class="meta" markdown="1">
-	
+
 #### Bits and Bobs
 
 Commands that start with ```wp``` make use of the WP-CLI which comes setup with vagrant. See http://wp-cli.org for more info and available commands.

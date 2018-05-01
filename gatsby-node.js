@@ -8,6 +8,10 @@
  exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
 
+  if (node.internal.mediaType !== 'text/markdown' && node.internal.type === 'File') {
+    console.log(node);
+  }
+
   // BLOG POSTS
   if (node.internal.type === `MarkdownRemark` && node.frontmatter.layout === 'post') {
     const fileNode = getNode(node.parent);

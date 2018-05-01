@@ -6,7 +6,7 @@ categories: update
 illustration: "http://i.imgur.com/b84yvgr.gif"
 ---
 
-<img class="hidden" src="{{ page.illustration }}" />
+![dungeons at five nights at freddy's](http://i.imgur.com/b84yvgr.gif)
 
 So tonight my son asked me to play Dungeons of [Five Nights at Freddy’s](https://en.wikipedia.org/wiki/Five_Nights_at_Freddy%27s). Normally this is something I would say no to. Instead I said yes since I’m trying to gain immortality through new experiences.
 
