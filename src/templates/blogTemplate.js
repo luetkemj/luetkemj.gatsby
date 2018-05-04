@@ -1,4 +1,5 @@
 import React from "react";
+import './blogTemplate.scss';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -8,13 +9,13 @@ export default function Template({
   const imageNode = allFile.edges.filter(edge => edge.node.relativePath === frontmatter.illustration);
 
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+    <div className="blog-template">
+      <div className="blog-template__post">
+        <h2 className="blog-template__date">{frontmatter.date}</h2>
+        <h1 className="blog-template__title">{frontmatter.title}</h1>
         {imageNode[0] && <img src={imageNode[0].node.publicURL} alt=""/>}
         <div
-          className="blog-post-content"
+          className="blog-template__content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
@@ -27,7 +28,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYMMDD")
         title
         illustration
       }

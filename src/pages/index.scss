@@ -10,10 +10,12 @@
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.4;
+    margin-bottom: 0;
   }
 
   &__post-list {
     list-style-type: none;
+    margin: 0;
   }
 }
 
@@ -22,7 +24,7 @@
   align-items: baseline;
   position: relative;
   line-height: 1.4;
-  // transition: background-color 150ms ease;
+  margin-bottom: 0;
 
   &:hover {
     background-color: $link-color;
@@ -53,9 +55,10 @@
   }
 
   &__date {
-    font-family: monospace;
+    font-family: 'Inconsolata';
     padding-right: 1ch;
     color: $date-color;
+    font-size: 14px;
   }
 
   &__link {

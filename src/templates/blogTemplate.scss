@@ -1,0 +1,23 @@
+@import '../theme/base.scss';
+
+.blog-template {
+  max-width: 592px;
+  margin: 0 auto;
+
+  &__date {
+    font-size: 14px;
+    font-family: 'Inconsolata';
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  img {
+    border: 1px solid #e8e8e8;
+    padding: 8px;
+  }
+}

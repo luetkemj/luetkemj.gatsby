@@ -1,18 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import './index.scss';
 
 const ListItem = ({ date, path, title, external }) => {
   const classes = date ? 'list-item list-item--with-date' : 'list-item';
   const linkToRender = external ?
-    (<a className="list-item__link" href={path}>{title}</a>) :
+    (<OutboundLink className="list-item__link" href={path}>{title}</OutboundLink>) :
     (<Link className="list-item__link" to={path}>{title}</Link>);
 
   return (
     <li key={`${date}-${title}`} className={classes}>
-      {date && <span className="list-item__date">{date}</span>}
-      <Link className="list-item__link" to={path}>{title}</Link>
+      {date && <span className="list-item__date extrnal">{date}</span>}
+      {linkToRender}
     </li>
   )
 };
@@ -41,10 +42,10 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges }}}) => (
       <ul className="index__post-list">
         <ListItem external path="http://www.webtoons.com/en/challenge/mallow-chalie/list?title_no=3458" title="Mallow Chalie" />
         <ListItem path="/comics/strong-man" title="Strong Man" />
-        <ListItem external path="http://www.makingcomics.com/2014/01/18/get-started-already/" title="Get Started Already!" />
+        <ListItem external path="http://www.makingcomics.com/2014/01/18/get-started-already" title="Get Started Already!" />
         <ListItem path="/comics/inner-dialogue" title="Inner Dialogue" />
         <ListItem path="/comics/inner-dialogue-outtakes" title="Inner Dialogue Outtakes" />
-        <ListItem external path="http://www.makingcomics.com/2014/01/01/taste-vs-ability/" title="Taste VS Ability" />
+        <ListItem external path="http://www.makingcomics.com/2014/01/01/taste-vs-ability" title="Taste VS Ability" />
         {/* <!-- 2816 monument -->
         <!-- experimental sequential 2 --> */}
         <ListItem path="/comics/robert" title="Robert" />

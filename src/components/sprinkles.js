@@ -37,7 +37,10 @@ export default class Sprinkler extends Component {
     });
 
     return (
-      <div style={{ position: 'absolute', zIndex: '-1' }}>
+      <div style={{
+        position: 'absolute',
+        zIndex: '-1',
+      }}>
         {sprinklesToRender}
       </div>
     );

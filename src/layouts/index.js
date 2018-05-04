@@ -3,13 +3,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header/header'
-import Footer from '../components/footer'
-import './normalize.css'
-import './reset.css'
-import './index.css'
+import Footer from '../components/footer/footer'
+import './index.scss'
 
 const Layout = ({ children, data }) => (
-  <div style={{ padding: '24px', }}>
+  <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -22,7 +20,9 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header title={data.site.siteMetadata.title} />
+    <div style={{ padding: '0 24px' }}>
       {children()}
+    </div>
     <Footer />
   </div>
 )

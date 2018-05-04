@@ -2,6 +2,8 @@ $text-color: #111;
 $link-color: #50e3c2;
 
 .header {
+  padding: 24px;
+
   &__masthead {
     display: flex;
     justify-content: space-between;
