@@ -18,6 +18,8 @@ const Footer = ({ siteTitle }) => (
       </li>
     </ul>
 
+    <div title="made with &hearts; in ATX" className="footer__heart">&hearts;</div>
+
     <ul className="footer__list">
       <li className="footer__list-item">
         <Link to="/about">about</Link>

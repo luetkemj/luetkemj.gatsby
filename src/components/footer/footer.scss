@@ -7,6 +7,10 @@
   display: flex;
   justify-content: space-between;
 
+  &__heart {
+    color: $pink;
+  }
+
   &__list {
     list-style: none;
     margin: 0;
