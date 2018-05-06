@@ -5,8 +5,6 @@ date:   2015-06-22 14:50:30
 categories: webdev
 illustration: "/assets/posts/150622/masonry.png"
 ---
-![masonry](https://i.imgur.com/wS3QLoB.png)
-
 
 Until now grid layouts on Rampages have been handled via a combination of styles thrown in widgets, scripts in meta boxes, and the Display Posts Shortcode that inexplicably doesn't support pagination, strips theme styles, and doesn't provide any sort of default for the CSS challenged among us. Let's just say it's been rather... unintuitive.
 

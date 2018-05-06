@@ -5,7 +5,6 @@ date:   2015-06-10 10:27:30
 categories: webdev
 illustration: "/assets/posts/list-remote-comments/taking-notes.png"
 ---
-![list remote comments](https://i.imgur.com/SUU5IkK.png)
 
 Dropped a new plugin yesterday. Learned a bunch of stuff in the process.
 

@@ -6,8 +6,6 @@ categories: webdev
 illustration: "/assets/posts/switch-to-blog/full-switchboard.png"
 ---
 
-![switchboard](https://i.imgur.com/jRwNcRi.png)
-
 On Friday Tom and I had a long conversation on the mother blog setup we create for most of our online courses. Configuration is completely unintuitive and faculty hoping to set this up inevitably need to schedule a sitdown with us to figure it out.
 
 Probably the biggest sticking point is subscribing students to the mother blog. Currently this is handled by creating a gravity form to collect, among other things, an RSS feed from the student's blog. Even if the students are successfull in finding and submitting the url to their feed the faculty has to parse the data from a gravity form and manually enter it into FeedWordPress.

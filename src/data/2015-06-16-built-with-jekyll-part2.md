@@ -5,7 +5,6 @@ date:   2015-06-16 10:27:30
 categories: webdev
 illustration: "/assets/posts/built-with-jekyll/octocat.png"
 ---
-![octocat](https://i.imgur.com/50X09ds.png)
 
 Jekyll has fantastic documentation. And getting started with Jekyll couldn't be any easier! Direct from the below is the Quick-start guide to getting started with Jekyll. &#9759;
 

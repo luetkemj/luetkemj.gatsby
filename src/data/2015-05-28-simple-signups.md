@@ -3,10 +3,8 @@ layout: post
 title:  "Simple Signups"
 date:   2015-05-28 11:45:30
 categories: webdev
-illustration: "/assets/posts/simple-signups/taking-names.png"
+illustration: "taking-names.png"
 ---
-
-![Imgur](https://i.imgur.com/P7URmiG.png)
 
 [Simple Signups](https://github.com/vcualtlab/simple-signups) is an agnostic single purpose WordPress theme designed and built to handle signups.
 

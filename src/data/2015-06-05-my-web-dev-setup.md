@@ -3,9 +3,8 @@ layout: post
 title:  "My Web Dev Tool Kit"
 date:   2015-06-05 12:07:30
 categories: webdev
-illustration: "/assets/posts/webdev-toolkit/toolkit.png"
+illustration: "toolkit.png"
 ---
-![toolkit](https://i.imgur.com/W1D4sSA.png)
 
 With my new laptop at AltLab having just arrived I figured now was an ideal time to share my web development tool kit.
 

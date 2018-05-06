@@ -5,7 +5,6 @@ date:   2015-06-06 12:07:30
 categories: webdev
 illustration: "/assets/posts/wp-db-imports-with-vagrant/files.png"
 ---
-![files](https://i.imgur.com/IOIWZiX.png)
 
 Having depended on MAMP and PHPmyadmin for as long as I've been doing this stuff, moving to Vagrant presented me with a very real fear that I wouldn't be able to easily setup local installs of live sites. With MAMP I had always done a find and replace through the old Replacr app and then uploaded the DB through PHPmyadmin.
 

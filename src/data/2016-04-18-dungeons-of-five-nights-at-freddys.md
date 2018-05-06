@@ -6,8 +6,6 @@ categories: update
 illustration: "http://i.imgur.com/b84yvgr.gif"
 ---
 
-![dungeons at five nights at freddy's](http://i.imgur.com/b84yvgr.gif)
-
 So tonight my son asked me to play Dungeons of [Five Nights at Freddy’s](https://en.wikipedia.org/wiki/Five_Nights_at_Freddy%27s). Normally this is something I would say no to. Instead I said yes since I’m trying to gain immortality through new experiences.
 
 I was watching [Vsauce](https://www.youtube.com/watch?v=6LyCC6jjcx8) the other day and Michael was going on about how as we get older each new year is a smaller and smaller percentage of our lives. New experiences tend to stick in our minds better than the same old drudgery. So I’m giving this whole saying “Yes” thing a go.

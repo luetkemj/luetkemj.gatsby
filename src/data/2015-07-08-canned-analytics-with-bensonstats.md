@@ -5,7 +5,6 @@ date:   2015-07-08 11:48:30
 categories: webdev
 illustration: "/assets/posts/150708/illustration.png"
 ---
-![canned analytics](https://i.imgur.com/hOe5sEx.png)
 <!--
 Having spent a fair amount of time recently tinkering with Mother Blogs it became apparent that another challenge we faced was the ability to provide any sort of meaningful analysis of the data we were collecting. That data is important. Fat lot of good that data'll do you when it's locked up in the database.
  -->
