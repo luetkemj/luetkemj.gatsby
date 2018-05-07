@@ -45,18 +45,30 @@
  const path = require("path");
 
  exports.createPages = ({ boundActionCreators, graphql }) => {
-   const { createPage } = boundActionCreators;
+  const { createPage } = boundActionCreators;
 
-   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
+  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
 
-   return graphql(`
+  // create blog post pages
+  graphql(`
      {
        allMarkdownRemark(
+         filter: { frontmatter: { layout: { eq: "post" } } }
          sort: { order: DESC, fields: [frontmatter___date] }
-         limit: 1000
+         limit: 10000
        ) {
          edges {
+           next {
+             fields {
+               path
+             }
+           }
            node {
+             fields {
+               path
+             }
+           }
+           previous {
              fields {
                path
              }
@@ -69,12 +81,45 @@
        return Promise.reject(result.errors);
      }
 
-     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+     result.data.allMarkdownRemark.edges.forEach(({ node, next, previous }) => {
        createPage({
          path: node.fields.path,
          component: blogPostTemplate,
-         context: {}, // additional data can be passed via context
+         context: {
+           nextPostPath: next && next.fields && next.fields.path,
+           previousPostPath: previous && previous.fields && previous.fields.path,
+         }, // additional data can be passed via context
        });
      });
    });
+
+   // create comics pages
+   graphql(`
+      {
+        allMarkdownRemark(
+          filter: { frontmatter: { layout: { eq: "comic" } } }
+          limit: 10000
+        ) {
+          edges {
+            node {
+              fields {
+                path
+              }
+            }
+          }
+        }
+      }
+    `).then(result => {
+      if (result.errors) {
+        return Promise.reject(result.errors);
+      }
+
+      result.data.allMarkdownRemark.edges.forEach(({ node, next, previous }) => {
+        createPage({
+          path: node.fields.path,
+          component: blogPostTemplate,
+          context: {}, // additional data can be passed via context
+        });
+      });
+    });
  };

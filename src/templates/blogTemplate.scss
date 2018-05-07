@@ -37,4 +37,18 @@
       margin-bottom: 0;
     }
   }
+
+  &__nav {
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+
+    &__next {
+      text-align: right;
+    }
+
+    &__previous {
+      text-align: left;
+    }
+  }
 }
